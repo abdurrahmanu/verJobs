@@ -1,14 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
+import tailwindcss from "@tailwindcss/vite";
 
+export default defineNuxtConfig({
+  compatibilityDate: "2025-07-15",
+  devtools: { enabled: true },
+  css: ["~/assets/css/main.css"],
+  vite: {
+    plugins: [tailwindcss()],
+  },
   modules: [
-    '@nuxt/ui',
-    '@nuxt/test-utils',
-    '@nuxt/image',
-    '@nuxt/scripts',
-    '@nuxt/eslint',
-    '@nuxt/content'
-  ]
-})
+    "@nuxt/ui",
+    "@nuxt/test-utils",
+    "@nuxt/image",
+    "@nuxt/scripts",
+    "@nuxt/eslint",
+    "@nuxt/content",
+    "@pinia/nuxt",
+  ],
+  pinia: {
+    storesDirs: ["stores"],
+  },
+});
