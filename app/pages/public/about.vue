@@ -1,7 +1,7 @@
 <template>
-    <div></div>
+  <main> ABOUT PAGE </main>
 </template>
 
 <script setup>
-definePageMeta({ alias: '/about' })
+definePageMeta({ layout: "public", alias: "/about" });
 </script>

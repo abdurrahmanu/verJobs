@@ -1,7 +1,7 @@
 <template>
-    <div></div>
+  <main> CONTACT PAGE </main>
 </template>
 
 <script setup>
-definePageMeta({ alias: '/contact' })
+definePageMeta({ layout: "public", alias: "/contact" });
 </script>

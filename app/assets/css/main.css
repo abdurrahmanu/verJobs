@@ -1,1 +1,48 @@
-@import 'tailwindcss'
+@import 'tailwindcss';
+
+/* Base transition (applied to all directions) */
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.35s ease;
+  will-change: transform, opacity;
+}
+
+/* Fade + move from top */
+.page-top-enter-from {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.page-top-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Fade + move from bottom */
+.page-bottom-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.page-bottom-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* Fade + move from left */
+.page-left-enter-from {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+.page-left-leave-to {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+/* Fade + move from right */
+.page-right-enter-from {
+  opacity: 0;
+  transform: translateX(20px);
+}
+.page-right-leave-to {
+  opacity: 0;
+  transform: translateX(-20px);
+}

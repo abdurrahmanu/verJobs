@@ -20,6 +20,7 @@
     "@pinia/nuxt": "^0.11.2",
     "@tailwindcss/vite": "^4.1.14",
     "@unhead/vue": "^2.0.19",
+    "@vueuse/motion": "^3.0.3",
     "better-sqlite3": "^12.4.1",
     "eslint": "^9.37.0",
     "nuxt": "^4.1.3",

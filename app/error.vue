@@ -1,5 +1,5 @@
 <template>
     <div>
-        Error page
+        Error page?
     </div>
 </template>

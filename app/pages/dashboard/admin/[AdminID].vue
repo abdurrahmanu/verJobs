@@ -3,5 +3,4 @@
 </template>
 
 <script setup>
-definePageMeta({ alias: '/__admin-dashboard' })
 </script>

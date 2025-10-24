@@ -1,7 +1,6 @@
 <template>
-    <div></div>
+    <div>HOUSE</div>
 </template>
 
 <script setup>
-definePageMeta({ alias: '/dashboard/institution' })
 </script>

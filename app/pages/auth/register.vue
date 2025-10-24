@@ -1,3 +1,3 @@
 <template>
-    <div>REGISTER</div>
+    REGISTER
 </template>
